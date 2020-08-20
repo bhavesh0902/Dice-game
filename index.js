@@ -1,14 +1,16 @@
 var randomNumber1=Math.floor(Math.random()*6)+1;
-var diceImage1="images/dice"+randomNumber1+".png";
+var diceImage1="dice"+randomNumber1+".png";
+var finalImage1+="images/"+diceImage1;
 
 var x=document.querySelectorAll("img")[0];
-x.setAttribute("src",diceImage1);
+x.setAttribute("src",finalImage1);
 
 var randomNumber2=Math.floor(Math.random()*6)+1;
 var diceImage2="images/dice"+randomNumber2+".png";
+var finalImage2="images/"+diceImage2;
 
 var y=document.querySelectorAll("img")[1];
-y.setAttribute("src",diceImage2);
+y.setAttribute("src",finalImage2);
 
 if(randomNumber1>randomNumber2)
 {
